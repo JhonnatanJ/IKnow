@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace IKnow
 {
-    public partial class Form1 : Form
+    public partial class frmInicio : Form
     {
-        public Form1()
+        public frmInicio()
         {
             InitializeComponent();
         }
 
+        private void btnJugar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

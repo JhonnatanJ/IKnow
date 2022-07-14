@@ -28,23 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblPregunta = new System.Windows.Forms.Label();
             this.btnCorrecta = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.lblRespuesta = new System.Windows.Forms.Label();
             this.btnVerRespuesta = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblTimer = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPregunta
             // 
             this.lblPregunta.AutoEllipsis = true;
-            this.lblPregunta.AutoSize = true;
-            this.lblPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblPregunta.ForeColor = System.Drawing.Color.White;
-            this.lblPregunta.Location = new System.Drawing.Point(203, 29);
+            this.lblPregunta.Location = new System.Drawing.Point(150, 32);
             this.lblPregunta.MaximumSize = new System.Drawing.Size(600, 96);
             this.lblPregunta.Name = "lblPregunta";
-            this.lblPregunta.Size = new System.Drawing.Size(138, 32);
+            this.lblPregunta.Size = new System.Drawing.Size(600, 96);
             this.lblPregunta.TabIndex = 18;
             this.lblPregunta.Text = "Pregunta";
             this.lblPregunta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -79,13 +83,12 @@
             // lblRespuesta
             // 
             this.lblRespuesta.AutoEllipsis = true;
-            this.lblRespuesta.AutoSize = true;
-            this.lblRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblRespuesta.ForeColor = System.Drawing.Color.White;
-            this.lblRespuesta.Location = new System.Drawing.Point(203, 234);
-            this.lblRespuesta.MaximumSize = new System.Drawing.Size(600, 96);
+            this.lblRespuesta.Location = new System.Drawing.Point(150, 213);
+            this.lblRespuesta.MaximumSize = new System.Drawing.Size(600, 100);
             this.lblRespuesta.Name = "lblRespuesta";
-            this.lblRespuesta.Size = new System.Drawing.Size(114, 25);
+            this.lblRespuesta.Size = new System.Drawing.Size(600, 100);
             this.lblRespuesta.TabIndex = 21;
             this.lblRespuesta.Text = "Respuesta";
             this.lblRespuesta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -104,17 +107,40 @@
             this.btnVerRespuesta.UseVisualStyleBackColor = false;
             this.btnVerRespuesta.Click += new System.EventHandler(this.btnVerRespuesta_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(900, 450);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblTimer
+            // 
+            this.lblTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblTimer.Location = new System.Drawing.Point(779, 32);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(81, 51);
+            this.lblTimer.TabIndex = 24;
+            this.lblTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmPregunta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(900, 450);
+            this.Controls.Add(this.lblTimer);
             this.Controls.Add(this.btnVerRespuesta);
             this.Controls.Add(this.lblRespuesta);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCorrecta);
             this.Controls.Add(this.lblPregunta);
+            this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPregunta";
@@ -122,8 +148,8 @@
             this.Text = "Pregunta";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPregunta_FormClosed);
             this.Load += new System.EventHandler(this.frmPregunta_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -134,5 +160,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblRespuesta;
         private System.Windows.Forms.Button btnVerRespuesta;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer timer1;
+        public System.Windows.Forms.Label lblTimer;
     }
 }

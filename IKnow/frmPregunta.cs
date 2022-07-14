@@ -15,6 +15,8 @@ namespace IKnow
         public string pregunta;
         public string respuesta;
         public int valor;
+        private int duration = 31;
+
 
         frmPrincipal form;
 
@@ -30,6 +32,7 @@ namespace IKnow
         private void btnVerRespuesta_Click(object sender, EventArgs e)
         {
             lblRespuesta.Visible = true;
+            timer1.Stop();
         }
 
         private void frmPregunta_Load(object sender, EventArgs e)
@@ -37,7 +40,28 @@ namespace IKnow
             
             lblPregunta.Text = this.pregunta;
             lblRespuesta.Text = this.respuesta;
+            timer1 = new System.Windows.Forms.Timer();
+            timer1.Tick += new EventHandler(count_down);
+            timer1.Interval = 1000;
+            timer1.Start();
         }
+
+        private void count_down(object sender, EventArgs e)
+        {
+
+            if (duration == 0)
+            {
+                timer1.Stop();
+                lblRespuesta.Visible = true;
+                btnCorrecta.Enabled = false;
+            }
+            else if (duration > 0)
+            {
+                duration--;
+                lblTimer.Text = duration.ToString();
+            }
+        }
+
 
         private void lblPregunta_Click(object sender, EventArgs e)
         {

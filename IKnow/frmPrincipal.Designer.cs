@@ -31,7 +31,6 @@ namespace IKnow
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.pnlHeader = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.btnTurno = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlPreguntas = new System.Windows.Forms.Panel();
@@ -91,6 +90,7 @@ namespace IKnow
             this.lblScoreG1 = new System.Windows.Forms.Label();
             this.lblTema1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlPreguntas.SuspendLayout();
@@ -109,11 +109,12 @@ namespace IKnow
             this.pnlGrupo1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconoG1)).BeginInit();
             this.pnlScoreG1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
             // 
-            this.pnlHeader.Controls.Add(this.label8);
+            this.pnlHeader.Controls.Add(this.pictureBox2);
             this.pnlHeader.Controls.Add(this.btnTurno);
             this.pnlHeader.Controls.Add(this.pictureBox1);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -121,17 +122,6 @@ namespace IKnow
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(1422, 76);
             this.pnlHeader.TabIndex = 0;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label8.Location = new System.Drawing.Point(1198, 19);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(140, 38);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "TURNO";
             // 
             // btnTurno
             // 
@@ -201,15 +191,15 @@ namespace IKnow
             // lblTema5
             // 
             this.lblTema5.AutoEllipsis = true;
-            this.lblTema5.AutoSize = true;
             this.lblTema5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTema5.ForeColor = System.Drawing.Color.White;
-            this.lblTema5.Location = new System.Drawing.Point(52, 12);
+            this.lblTema5.Location = new System.Drawing.Point(52, 7);
             this.lblTema5.MaximumSize = new System.Drawing.Size(179, 75);
             this.lblTema5.Name = "lblTema5";
-            this.lblTema5.Size = new System.Drawing.Size(77, 22);
+            this.lblTema5.Size = new System.Drawing.Size(179, 75);
             this.lblTema5.TabIndex = 23;
             this.lblTema5.Text = "Tema 1";
+            this.lblTema5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnT5100
             // 
@@ -298,12 +288,11 @@ namespace IKnow
             // 
             // lblScoreG5
             // 
-            this.lblScoreG5.AutoSize = true;
             this.lblScoreG5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblScoreG5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblScoreG5.Location = new System.Drawing.Point(127, 13);
+            this.lblScoreG5.Location = new System.Drawing.Point(89, 8);
             this.lblScoreG5.Name = "lblScoreG5";
-            this.lblScoreG5.Size = new System.Drawing.Size(36, 38);
+            this.lblScoreG5.Size = new System.Drawing.Size(115, 38);
             this.lblScoreG5.TabIndex = 4;
             this.lblScoreG5.Text = "0";
             this.lblScoreG5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -339,15 +328,15 @@ namespace IKnow
             // lblTema4
             // 
             this.lblTema4.AutoEllipsis = true;
-            this.lblTema4.AutoSize = true;
             this.lblTema4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTema4.ForeColor = System.Drawing.Color.White;
-            this.lblTema4.Location = new System.Drawing.Point(54, 12);
+            this.lblTema4.Location = new System.Drawing.Point(54, 7);
             this.lblTema4.MaximumSize = new System.Drawing.Size(179, 75);
             this.lblTema4.Name = "lblTema4";
-            this.lblTema4.Size = new System.Drawing.Size(77, 22);
+            this.lblTema4.Size = new System.Drawing.Size(179, 75);
             this.lblTema4.TabIndex = 22;
             this.lblTema4.Text = "Tema 1";
+            this.lblTema4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnT4100
             // 
@@ -436,12 +425,11 @@ namespace IKnow
             // 
             // lblScoreG4
             // 
-            this.lblScoreG4.AutoSize = true;
             this.lblScoreG4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblScoreG4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblScoreG4.Location = new System.Drawing.Point(122, 13);
+            this.lblScoreG4.Location = new System.Drawing.Point(84, 8);
             this.lblScoreG4.Name = "lblScoreG4";
-            this.lblScoreG4.Size = new System.Drawing.Size(36, 38);
+            this.lblScoreG4.Size = new System.Drawing.Size(115, 38);
             this.lblScoreG4.TabIndex = 3;
             this.lblScoreG4.Text = "0";
             this.lblScoreG4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -477,15 +465,15 @@ namespace IKnow
             // lblTema3
             // 
             this.lblTema3.AutoEllipsis = true;
-            this.lblTema3.AutoSize = true;
             this.lblTema3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTema3.ForeColor = System.Drawing.Color.White;
-            this.lblTema3.Location = new System.Drawing.Point(52, 12);
+            this.lblTema3.Location = new System.Drawing.Point(52, 7);
             this.lblTema3.MaximumSize = new System.Drawing.Size(179, 75);
             this.lblTema3.Name = "lblTema3";
-            this.lblTema3.Size = new System.Drawing.Size(77, 22);
+            this.lblTema3.Size = new System.Drawing.Size(179, 75);
             this.lblTema3.TabIndex = 21;
             this.lblTema3.Text = "Tema 1";
+            this.lblTema3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnT3100
             // 
@@ -574,12 +562,11 @@ namespace IKnow
             // 
             // lblScoreG3
             // 
-            this.lblScoreG3.AutoSize = true;
             this.lblScoreG3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblScoreG3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lblScoreG3.Location = new System.Drawing.Point(123, 13);
+            this.lblScoreG3.Location = new System.Drawing.Point(85, 8);
             this.lblScoreG3.Name = "lblScoreG3";
-            this.lblScoreG3.Size = new System.Drawing.Size(36, 38);
+            this.lblScoreG3.Size = new System.Drawing.Size(115, 38);
             this.lblScoreG3.TabIndex = 2;
             this.lblScoreG3.Text = "0";
             this.lblScoreG3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -615,15 +602,15 @@ namespace IKnow
             // lblTema2
             // 
             this.lblTema2.AutoEllipsis = true;
-            this.lblTema2.AutoSize = true;
             this.lblTema2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTema2.ForeColor = System.Drawing.Color.White;
-            this.lblTema2.Location = new System.Drawing.Point(50, 12);
+            this.lblTema2.Location = new System.Drawing.Point(50, 7);
             this.lblTema2.MaximumSize = new System.Drawing.Size(179, 75);
             this.lblTema2.Name = "lblTema2";
-            this.lblTema2.Size = new System.Drawing.Size(77, 22);
+            this.lblTema2.Size = new System.Drawing.Size(179, 75);
             this.lblTema2.TabIndex = 20;
             this.lblTema2.Text = "Tema 1";
+            this.lblTema2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnT2100
             // 
@@ -673,12 +660,11 @@ namespace IKnow
             // 
             // lblScoreG2
             // 
-            this.lblScoreG2.AutoSize = true;
             this.lblScoreG2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblScoreG2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lblScoreG2.Location = new System.Drawing.Point(119, 13);
+            this.lblScoreG2.Location = new System.Drawing.Point(81, 8);
             this.lblScoreG2.Name = "lblScoreG2";
-            this.lblScoreG2.Size = new System.Drawing.Size(36, 38);
+            this.lblScoreG2.Size = new System.Drawing.Size(115, 38);
             this.lblScoreG2.TabIndex = 1;
             this.lblScoreG2.Text = "0";
             this.lblScoreG2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -838,12 +824,11 @@ namespace IKnow
             // 
             // lblScoreG1
             // 
-            this.lblScoreG1.AutoSize = true;
             this.lblScoreG1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblScoreG1.ForeColor = System.Drawing.Color.Violet;
-            this.lblScoreG1.Location = new System.Drawing.Point(122, 13);
+            this.lblScoreG1.Location = new System.Drawing.Point(85, 8);
             this.lblScoreG1.Name = "lblScoreG1";
-            this.lblScoreG1.Size = new System.Drawing.Size(36, 38);
+            this.lblScoreG1.Size = new System.Drawing.Size(115, 38);
             this.lblScoreG1.TabIndex = 0;
             this.lblScoreG1.Text = "0";
             this.lblScoreG1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -851,13 +836,12 @@ namespace IKnow
             // lblTema1
             // 
             this.lblTema1.AutoEllipsis = true;
-            this.lblTema1.AutoSize = true;
             this.lblTema1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTema1.ForeColor = System.Drawing.Color.White;
-            this.lblTema1.Location = new System.Drawing.Point(56, 12);
+            this.lblTema1.Location = new System.Drawing.Point(56, 7);
             this.lblTema1.MaximumSize = new System.Drawing.Size(179, 75);
             this.lblTema1.Name = "lblTema1";
-            this.lblTema1.Size = new System.Drawing.Size(77, 22);
+            this.lblTema1.Size = new System.Drawing.Size(179, 75);
             this.lblTema1.TabIndex = 1;
             this.lblTema1.Text = "Tema 1";
             this.lblTema1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -870,6 +854,16 @@ namespace IKnow
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::IKnow.Properties.Resources.lblTurnoEquipo;
+            this.pictureBox2.Location = new System.Drawing.Point(1185, 8);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(150, 62);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
             // 
             // frmPrincipal
             // 
@@ -886,34 +880,29 @@ namespace IKnow
             this.Text = "iKnow!!";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.pnlHeader.ResumeLayout(false);
-            this.pnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlPreguntas.ResumeLayout(false);
             this.pnlGrupo5.ResumeLayout(false);
             this.pnlGrupo5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconoG5)).EndInit();
             this.pnlScoreG5.ResumeLayout(false);
-            this.pnlScoreG5.PerformLayout();
             this.pnlGrupo4.ResumeLayout(false);
             this.pnlGrupo4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconoG4)).EndInit();
             this.pnlScoreG4.ResumeLayout(false);
-            this.pnlScoreG4.PerformLayout();
             this.pnlGrupo3.ResumeLayout(false);
             this.pnlGrupo3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconoG3)).EndInit();
             this.pnlScoreG3.ResumeLayout(false);
-            this.pnlScoreG3.PerformLayout();
             this.pnlGrupo2.ResumeLayout(false);
             this.pnlGrupo2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconoG2)).EndInit();
             this.pnlScoreG2.ResumeLayout(false);
-            this.pnlScoreG2.PerformLayout();
             this.pnlGrupo1.ResumeLayout(false);
             this.pnlGrupo1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconoG1)).EndInit();
             this.pnlScoreG1.ResumeLayout(false);
-            this.pnlScoreG1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -974,12 +963,12 @@ namespace IKnow
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label lblScoreG1;
         public System.Windows.Forms.Label lblScoreG5;
         public System.Windows.Forms.Label lblScoreG4;
         public System.Windows.Forms.Label lblScoreG3;
         public System.Windows.Forms.Label lblScoreG2;
         public System.Windows.Forms.Button btnTurno;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using IKnow.Cache;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -26,21 +27,32 @@ namespace IKnow
             conexionBD.Close();
         }
 
-        public DataTable CargarDGV(string nombre)
+        public void CargarDatosRanking()
         {
             MySqlConnection conexionBD = Conexion.conexion();
             conexionBD.Open();
             MySqlCommand comando = new MySqlCommand();
-            DataTable dt = new DataTable();
-
+            int i = 0;
             comando.Connection = conexionBD;
-            comando.CommandText = "select * from puntacion where nombre=@nombre";
-            comando.Parameters.AddWithValue("@nombre", nombre);
+            comando.CommandText = "select * from puntuacion order by puntaje desc limit 5";
+
             comando.CommandType = System.Data.CommandType.Text;
-            MySqlDataAdapter da = new MySqlDataAdapter(comando);
-            da.Fill(dt);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    if (i < 5)
+                    {
+                        CacheRanking.id[i] = reader.GetInt32(0);
+                        CacheRanking.nombre[i] = reader.GetString(1);
+                        CacheRanking.puntaje[i] = reader.GetInt32(2);
+                        i++;
+                    }
+                }
+            }
             conexionBD.Close();
-            return dt;
         }
     }
 }

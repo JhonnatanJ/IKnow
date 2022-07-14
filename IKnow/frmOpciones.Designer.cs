@@ -33,7 +33,7 @@ namespace IKnow
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbMateria = new System.Windows.Forms.ComboBox();
             this.btnAJugar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -89,18 +89,18 @@ namespace IKnow
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             // 
-            // comboBox2
+            // cbMateria
             // 
-            this.comboBox2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.ForeColor = System.Drawing.Color.White;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(174, 378);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(389, 37);
-            this.comboBox2.TabIndex = 4;
-            this.comboBox2.Text = "Escoja la materia:";
+            this.cbMateria.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.cbMateria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbMateria.ForeColor = System.Drawing.Color.White;
+            this.cbMateria.FormattingEnabled = true;
+            this.cbMateria.Location = new System.Drawing.Point(174, 378);
+            this.cbMateria.Name = "cbMateria";
+            this.cbMateria.Size = new System.Drawing.Size(389, 37);
+            this.cbMateria.TabIndex = 4;
+            this.cbMateria.Text = "Escoja la materia:";
             // 
             // btnAJugar
             // 
@@ -121,7 +121,7 @@ namespace IKnow
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(727, 643);
             this.Controls.Add(this.btnAJugar);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbMateria);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -144,7 +144,7 @@ namespace IKnow
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbMateria;
         private System.Windows.Forms.Button btnAJugar;
     }
 }

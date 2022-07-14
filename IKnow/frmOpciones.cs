@@ -27,5 +27,11 @@ namespace IKnow
 
             principal.Show();
         }
+
+        private void frmOpciones_Load(object sender, EventArgs e)
+        {
+            Materia materia = new Materia();
+
+        }
     }
 }

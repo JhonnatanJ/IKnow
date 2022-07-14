@@ -44,7 +44,7 @@ namespace IKnow
             // 
             this.comboBox1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.ForeColor = System.Drawing.Color.White;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -55,7 +55,7 @@ namespace IKnow
             "5"});
             this.comboBox1.Location = new System.Drawing.Point(174, 212);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(389, 35);
+            this.comboBox1.Size = new System.Drawing.Size(389, 37);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.Text = "Escoja la cantidad de equipos:";
             // 
@@ -93,12 +93,12 @@ namespace IKnow
             // 
             this.comboBox2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox2.ForeColor = System.Drawing.Color.White;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(174, 378);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(389, 35);
+            this.comboBox2.Size = new System.Drawing.Size(389, 37);
             this.comboBox2.TabIndex = 4;
             this.comboBox2.Text = "Escoja la materia:";
             // 
@@ -130,6 +130,7 @@ namespace IKnow
             this.Name = "frmOpciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Opciones de Quiz";
+            this.Load += new System.EventHandler(this.frmOpciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

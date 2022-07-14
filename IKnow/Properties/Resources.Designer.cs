@@ -63,6 +63,16 @@ namespace IKnow.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnAjugar {
+            get {
+                object obj = ResourceManager.GetObject("btnAjugar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnJugar {
             get {
                 object obj = ResourceManager.GetObject("btnJugar", resourceCulture);
@@ -93,9 +103,29 @@ namespace IKnow.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_cerrar {
+            get {
+                object obj = ResourceManager.GetObject("icon_cerrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lblEquipos {
             get {
                 object obj = ResourceManager.GetObject("lblEquipos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lblMateria {
+            get {
+                object obj = ResourceManager.GetObject("lblMateria", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

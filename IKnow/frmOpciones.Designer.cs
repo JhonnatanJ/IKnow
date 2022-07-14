@@ -43,6 +43,7 @@ namespace IKnow
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.ForeColor = System.Drawing.Color.White;
@@ -57,7 +58,6 @@ namespace IKnow
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(389, 37);
             this.comboBox1.TabIndex = 0;
-            this.comboBox1.Text = "Escoja la cantidad de equipos:";
             // 
             // pictureBox1
             // 
@@ -92,6 +92,7 @@ namespace IKnow
             // cbMateria
             // 
             this.cbMateria.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.cbMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMateria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbMateria.ForeColor = System.Drawing.Color.White;
@@ -100,7 +101,6 @@ namespace IKnow
             this.cbMateria.Name = "cbMateria";
             this.cbMateria.Size = new System.Drawing.Size(389, 37);
             this.cbMateria.TabIndex = 4;
-            this.cbMateria.Text = "Escoja la materia:";
             // 
             // btnAJugar
             // 

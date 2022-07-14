@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IKnow.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,45 +77,48 @@ namespace IKnow
         private void btnTurno_Click(object sender, EventArgs e)
         {
             int cont = Convert.ToInt32(this.form.btnTurno.Text);
-            if (this.form.btnTurno.Text == "1")
+            int equi = Convert.ToInt32(CacheEquipos.id);
+            if (cont <= equi && cont > 0)
             {
-                int suma = Convert.ToInt32(this.form.lblScoreG1.Text);
-                suma += valor;
-                this.form.lblScoreG1.Text = suma.ToString();
+                if (this.form.btnTurno.Text == "1")
+                {
+                    int suma = Convert.ToInt32(this.form.lblScoreG1.Text);
+                    suma += valor;
+                    this.form.lblScoreG1.Text = suma.ToString();
+
+                }
+                if (this.form.btnTurno.Text == "2")
+                {
+                    int suma = Convert.ToInt32(this.form.lblScoreG2.Text);
+                    suma += valor;
+                    this.form.lblScoreG2.Text = suma.ToString();
+
+                }
+                if (this.form.btnTurno.Text == "3")
+                {
+                    int suma = Convert.ToInt32(this.form.lblScoreG3.Text);
+                    suma += valor;
+                    this.form.lblScoreG3.Text = suma.ToString();
+
+                }
+                if (this.form.btnTurno.Text == "4")
+                {
+                    int suma = Convert.ToInt32(this.form.lblScoreG4.Text);
+                    suma += valor;
+                    this.form.lblScoreG4.Text = suma.ToString();
+
+                }
+                if (this.form.btnTurno.Text == "5")
+                {
+                    int suma = Convert.ToInt32(this.form.lblScoreG5.Text);
+                    suma += valor;
+                    this.form.lblScoreG5.Text = suma.ToString();
+
+                }
 
             }
-            if (this.form.btnTurno.Text == "2")
-            {
-                int suma = Convert.ToInt32(this.form.lblScoreG2.Text);
-                suma += valor;
-                this.form.lblScoreG2.Text = suma.ToString();
 
-            }
-            if (this.form.btnTurno.Text == "3")
-            {
-                int suma = Convert.ToInt32(this.form.lblScoreG3.Text);
-                suma += valor;
-                this.form.lblScoreG3.Text = suma.ToString();
-
-            }
-            if (this.form.btnTurno.Text == "4")
-            {
-                int suma = Convert.ToInt32(this.form.lblScoreG4.Text);
-                suma += valor;
-                this.form.lblScoreG4.Text = suma.ToString();
-
-            }
-            if (this.form.btnTurno.Text == "5")
-            {
-                int suma = Convert.ToInt32(this.form.lblScoreG5.Text);
-                suma += valor;
-                this.form.lblScoreG5.Text = suma.ToString();
-
-            }
-
-
-
-            if (cont < 5)
+            if (cont < equi)
                 cont++;
             else
                 cont = 1;
@@ -180,6 +184,11 @@ namespace IKnow
 
 
             this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

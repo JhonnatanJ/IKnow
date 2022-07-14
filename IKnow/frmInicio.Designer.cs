@@ -29,9 +29,11 @@ namespace IKnow
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.pbInicio = new System.Windows.Forms.PictureBox();
             this.btnJugar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnRanking = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -74,11 +76,27 @@ namespace IKnow
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // btnRanking
+            // 
+            this.btnRanking.BackColor = System.Drawing.Color.Black;
+            this.btnRanking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRanking.BackgroundImage")));
+            this.btnRanking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRanking.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRanking.Location = new System.Drawing.Point(802, 660);
+            this.btnRanking.Margin = new System.Windows.Forms.Padding(0);
+            this.btnRanking.Name = "btnRanking";
+            this.btnRanking.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnRanking.Size = new System.Drawing.Size(353, 74);
+            this.btnRanking.TabIndex = 4;
+            this.btnRanking.UseVisualStyleBackColor = false;
+            this.btnRanking.Click += new System.EventHandler(this.btnRanking_Click);
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1167, 743);
+            this.Controls.Add(this.btnRanking);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnJugar);
             this.Controls.Add(this.pbInicio);
@@ -97,6 +115,7 @@ namespace IKnow
         private System.Windows.Forms.PictureBox pbInicio;
         private System.Windows.Forms.Button btnJugar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnRanking;
     }
 }
 

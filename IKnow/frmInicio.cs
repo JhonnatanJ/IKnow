@@ -19,7 +19,18 @@ namespace IKnow
 
         private void btnJugar_Click(object sender, EventArgs e)
         {
+            frmOpciones opciones = new frmOpciones();
+            opciones.Show();
+        }
 
+        public void Ocultar()
+        {
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

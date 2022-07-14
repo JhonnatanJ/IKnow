@@ -16,5 +16,16 @@ namespace IKnow
         {
             InitializeComponent();
         }
+
+        private void btnAJugar_Click(object sender, EventArgs e)
+        {
+            frmInicio inicio = new frmInicio();
+            frmPrincipal principal = new frmPrincipal();
+
+            inicio.Visible=false;
+            this.Close();
+
+            principal.Show();
+        }
     }
 }

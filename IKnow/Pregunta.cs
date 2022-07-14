@@ -10,16 +10,15 @@ namespace IKnow
 {
     class Pregunta
     {
-        public void CargarDatosPregunta(string descripcionPregunta)
+        public void CargarDatosPregunta(int idTema, int indice)
         {
             MySqlConnection conexionBD = Conexion.conexion();
             conexionBD.Open();
             MySqlCommand comando = new MySqlCommand();
-
+            int i = 0;
             comando.Connection = conexionBD;
-            comando.CommandText = "select * from pregunta where descripcion=@descipcion && idtema=@idtema";
-            comando.Parameters.AddWithValue("@descripcion", descripcionPregunta);
-            comando.Parameters.AddWithValue("@idtema", CacheTema.id);
+            comando.CommandText = "select * from pregunta where idtema=@idtema";
+            comando.Parameters.AddWithValue("@idtema", CacheTema.id[indice]);
 
             comando.CommandType = System.Data.CommandType.Text;
             MySqlDataReader reader = comando.ExecuteReader();
@@ -28,11 +27,13 @@ namespace IKnow
             {
                 while (reader.Read())
                 {
-                    CachePregunta.id = reader.GetInt32(0);
-                    CachePregunta.descripcion = reader.GetString(1);
-                    CachePregunta.idtema = reader.GetInt32(2);
-                    CachePregunta.respuesta = reader.GetString(3);
-
+                    if (i < 5) {
+                        CachePregunta.id[i] = reader.GetInt32(0);
+                        CachePregunta.descripcion[i] = reader.GetString(1);
+                        CachePregunta.idtema[i] = reader.GetInt32(2);
+                        CachePregunta.respuesta[i] = reader.GetString(3);
+                        i++;
+                    }
                 }
             }
             conexionBD.Close();

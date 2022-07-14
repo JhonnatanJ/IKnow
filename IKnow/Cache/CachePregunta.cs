@@ -8,10 +8,10 @@ namespace IKnow.Cache
 {
     class CachePregunta
     {
-        public static int id { get; set; }
-        public static string descripcion { get; set; }
-
-        public static int idtema { get; set; }
-        public static string respuesta { get; set; }
+        public static int[] id = new int[5];
+        public static string[] descripcion = new string[5];
+       
+        public static int[] idtema = new int[5];
+        public static string[] respuesta = new string[5];
     }
 }

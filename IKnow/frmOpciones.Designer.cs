@@ -29,7 +29,7 @@ namespace IKnow
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbEquipos = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -40,24 +40,24 @@ namespace IKnow
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cbEquipos
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbEquipos.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.cbEquipos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEquipos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbEquipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbEquipos.ForeColor = System.Drawing.Color.White;
+            this.cbEquipos.FormattingEnabled = true;
+            this.cbEquipos.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4",
             "5"});
-            this.comboBox1.Location = new System.Drawing.Point(174, 212);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(389, 37);
-            this.comboBox1.TabIndex = 0;
+            this.cbEquipos.Location = new System.Drawing.Point(174, 212);
+            this.cbEquipos.Name = "cbEquipos";
+            this.cbEquipos.Size = new System.Drawing.Size(389, 37);
+            this.cbEquipos.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -125,7 +125,7 @@ namespace IKnow
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbEquipos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "frmOpciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -140,7 +140,7 @@ namespace IKnow
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbEquipos;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;

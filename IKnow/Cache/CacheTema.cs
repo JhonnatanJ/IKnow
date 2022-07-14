@@ -8,9 +8,8 @@ namespace IKnow.Cache
 {
     class CacheTema
     {
-        public static int id { get; set; }
-        public static string nombre { get; set; }
-
-        public static int idmateria { get; set; }
+        public static int[] id = new int[5];
+        public static string[] nombre = new string[5];
+        public static int[] idmateria = new int[5]; 
     }
 }

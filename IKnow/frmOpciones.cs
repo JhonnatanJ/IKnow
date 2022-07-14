@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IKnow.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,7 @@ namespace IKnow
             frmInicio inicio = new frmInicio();
             frmPrincipal principal = new frmPrincipal();
 
+            Equipos.id = (cbEquipos.Text);
             Materia materia = new Materia();
             materia.CargarDatosMateria(cbMateria.Text);
 

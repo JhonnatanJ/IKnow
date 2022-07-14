@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IKnow.Cache
 {
-    class Equipos
+    class CacheEquipos
     {
         public static string id { get; set; }
     }

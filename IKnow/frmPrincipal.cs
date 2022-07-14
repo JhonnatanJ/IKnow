@@ -28,6 +28,8 @@ namespace IKnow
             {
                 pictureBox1.BackgroundImage = Image.FromFile(Application.StartupPath + "/../../../Imagenes/Materias/imgCienciasN.png");
             }
+
+
         }
 
     }

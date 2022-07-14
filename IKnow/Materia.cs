@@ -21,7 +21,7 @@ namespace IKnow
             DataTable dt = new DataTable();
 
             comando.Connection = conexionBD;
-            comando.CommandText = "select id, nombre from materia";
+            comando.CommandText = "select nombre from materia";
             comando.CommandType = System.Data.CommandType.Text;
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
             da.Fill(dt);

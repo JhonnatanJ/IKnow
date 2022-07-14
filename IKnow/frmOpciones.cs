@@ -15,12 +15,16 @@ namespace IKnow
         public frmOpciones()
         {
             InitializeComponent();
+            
         }
 
         private void btnAJugar_Click(object sender, EventArgs e)
         {
             frmInicio inicio = new frmInicio();
             frmPrincipal principal = new frmPrincipal();
+
+            Materia materia = new Materia();
+            materia.CargarDatosMateria(cbMateria.Text);
 
             inicio.Visible=false;
             this.Close();
@@ -30,7 +34,13 @@ namespace IKnow
 
         private void frmOpciones_Load(object sender, EventArgs e)
         {
+            
+            
             Materia materia = new Materia();
+            cbMateria.ValueMember = "id";
+            cbMateria.DisplayMember = "nombre";
+            cbMateria.DataSource = materia.CargarCombo();
+            
 
         }
     }

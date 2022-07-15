@@ -76,6 +76,12 @@ namespace IKnow
 
         private void btnTurno_Click(object sender, EventArgs e)
         {
+            form.contadorGanador += 1;
+            if (form.contadorGanador == 25)
+            {
+                form.Ganar();
+            }
+
             int cont = Convert.ToInt32(this.form.btnTurno.Text);
             int equi = Convert.ToInt32(CacheEquipos.id);
             if (cont <= equi && cont > 0)
@@ -136,6 +142,11 @@ namespace IKnow
 
         private void button1_Click(object sender, EventArgs e)
         {
+            form.contadorGanador += 1;
+            if (form.contadorGanador == 25)
+            {
+                form.Ganar();
+            }
             int cont = Convert.ToInt32(this.form.btnTurno.Text);
             if (this.form.btnTurno.Text == "1")
             {

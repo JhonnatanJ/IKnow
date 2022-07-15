@@ -45,10 +45,10 @@
             this.lblPregunta.AutoEllipsis = true;
             this.lblPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblPregunta.ForeColor = System.Drawing.Color.White;
-            this.lblPregunta.Location = new System.Drawing.Point(150, 32);
-            this.lblPregunta.MaximumSize = new System.Drawing.Size(600, 96);
+            this.lblPregunta.Location = new System.Drawing.Point(131, 23);
+            this.lblPregunta.MaximumSize = new System.Drawing.Size(650, 175);
             this.lblPregunta.Name = "lblPregunta";
-            this.lblPregunta.Size = new System.Drawing.Size(600, 96);
+            this.lblPregunta.Size = new System.Drawing.Size(650, 175);
             this.lblPregunta.TabIndex = 18;
             this.lblPregunta.Text = "Pregunta";
             this.lblPregunta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -85,7 +85,7 @@
             this.lblRespuesta.AutoEllipsis = true;
             this.lblRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblRespuesta.ForeColor = System.Drawing.Color.White;
-            this.lblRespuesta.Location = new System.Drawing.Point(150, 213);
+            this.lblRespuesta.Location = new System.Drawing.Point(154, 215);
             this.lblRespuesta.MaximumSize = new System.Drawing.Size(600, 100);
             this.lblRespuesta.Name = "lblRespuesta";
             this.lblRespuesta.Size = new System.Drawing.Size(600, 100);
@@ -123,7 +123,7 @@
             // 
             this.lblTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lblTimer.Location = new System.Drawing.Point(779, 32);
+            this.lblTimer.Location = new System.Drawing.Point(807, 9);
             this.lblTimer.Name = "lblTimer";
             this.lblTimer.Size = new System.Drawing.Size(81, 51);
             this.lblTimer.TabIndex = 24;

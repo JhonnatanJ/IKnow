@@ -29,22 +29,25 @@ namespace IKnow
             Materia materia = new Materia();
             materia.CargarDatosMateria(cbMateria.Text);
 
-            inicio.Visible=false;
             this.Close();
-
             principal.Show();
         }
 
         private void frmOpciones_Load(object sender, EventArgs e)
-        {
-            
+        {            
             
             Materia materia = new Materia();
             cbMateria.ValueMember = "id";
             cbMateria.DisplayMember = "nombre";
             cbMateria.DataSource = materia.CargarCombo();
-            
 
+            this.cbEquipos.SelectedIndex = 0;
+            this.cbMateria.SelectedIndex = 0;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -31,6 +31,8 @@ namespace IKnow
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.pbVolver = new System.Windows.Forms.PictureBox();
+
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnTurno = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -90,8 +92,9 @@ namespace IKnow
             this.lblScoreG1 = new System.Windows.Forms.Label();
             this.lblTema1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVolver)).BeginInit();
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlPreguntas.SuspendLayout();
@@ -114,6 +117,7 @@ namespace IKnow
             // 
             // pnlHeader
             // 
+            this.pnlHeader.Controls.Add(this.pbVolver);
             this.pnlHeader.Controls.Add(this.pictureBox2);
             this.pnlHeader.Controls.Add(this.btnTurno);
             this.pnlHeader.Controls.Add(this.pictureBox1);
@@ -122,6 +126,17 @@ namespace IKnow
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(1422, 76);
             this.pnlHeader.TabIndex = 0;
+            // 
+            // pbVolver
+            // 
+            this.pbVolver.Image = global::IKnow.Properties.Resources.pbVolver;
+            this.pbVolver.Location = new System.Drawing.Point(3, 5);
+            this.pbVolver.Name = "pbVolver";
+            this.pbVolver.Size = new System.Drawing.Size(86, 68);
+            this.pbVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbVolver.TabIndex = 18;
+            this.pbVolver.TabStop = false;
+            this.pbVolver.Click += new System.EventHandler(this.pbVolver_Click);
             // 
             // pictureBox2
             // 
@@ -147,7 +162,7 @@ namespace IKnow
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -854,17 +869,6 @@ namespace IKnow
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label7.Location = new System.Drawing.Point(52, 491);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(180, 38);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "EQUIPO 5";
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -873,13 +877,14 @@ namespace IKnow
             this.ClientSize = new System.Drawing.Size(1422, 757);
             this.Controls.Add(this.pnlPreguntas);
             this.Controls.Add(this.pnlHeader);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "iKnow!!";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.pnlHeader.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbVolver)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlPreguntas.ResumeLayout(false);
@@ -969,6 +974,7 @@ namespace IKnow
         public System.Windows.Forms.Label lblScoreG2;
         public System.Windows.Forms.Button btnTurno;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pbVolver;
+
     }
 }

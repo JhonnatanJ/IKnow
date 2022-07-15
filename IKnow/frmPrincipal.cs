@@ -19,6 +19,7 @@ namespace IKnow
         }
 
         public int contador = 1;
+        public int contadorGanador = 0;
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
@@ -29,6 +30,10 @@ namespace IKnow
             if (Cache.CacheMateria.nombre.ToLower().Equals("ciencias naturales"))
             {
                 pictureBox1.BackgroundImage = Image.FromFile(Application.StartupPath + "/../../../Imagenes/Materias/imgCienciasN.png");
+            }
+            if (Cache.CacheMateria.nombre.ToLower().Equals("gamificación"))
+            {
+                pictureBox1.BackgroundImage = Image.FromFile(Application.StartupPath + "/../../../Imagenes/Materias/imgGamificacion.png");
             }
 
             Tema tema = new Tema();
@@ -44,9 +49,33 @@ namespace IKnow
 
         }
 
+        public void Ganar()
+        {
+            int[] aux = new int[5];
+            int ganar,indice=0;
+            aux[0] = int.Parse(this.lblScoreG1.Text);
+            aux[1] = int.Parse(this.lblScoreG2.Text);
+            aux[2] = int.Parse(this.lblScoreG3.Text);
+            aux[3] = int.Parse(this.lblScoreG4.Text);
+            aux[4] = int.Parse(this.lblScoreG5.Text);
+
+            ganar = aux.Max();
+
+            for(int i=0; i<5; i++)
+            {
+                if (aux[i] == ganar)
+                {
+                    indice = i;
+                }
+            }
+
+            frmGanador ganador = new frmGanador(ganar, indice);
+            ganador.Show();
+            this.Enabled = false;
+        }
+
         private void btnT1500_Click(object sender, EventArgs e)
         {
-
             int cache = CacheTema.id[0];
             Pregunta p = new Pregunta();
             p.CargarDatosPregunta(cache, 0);
@@ -327,9 +356,9 @@ namespace IKnow
             Pregunta p = new Pregunta();
             p.CargarDatosPregunta(cache, 4);
 
-            frmPregunta form = new frmPregunta(CachePregunta.descripcion[3], CachePregunta.respuesta[3], 400, this);
-            btnT5400.Text = "";
-            btnT5400.Enabled = false;
+            frmPregunta form = new frmPregunta(CachePregunta.descripcion[3], CachePregunta.respuesta[3], 200, this);
+            btnT5200.Text = "";
+            btnT5200.Enabled = false;
             form.Show();
         }
 
@@ -343,6 +372,11 @@ namespace IKnow
             btnT5100.Text = "";
             btnT5100.Enabled = false;
             form.Show();
+        }
+
+        private void pbVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

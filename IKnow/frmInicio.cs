@@ -32,5 +32,11 @@ namespace IKnow
         {
             this.Close();
         }
+
+        private void btnRanking_Click(object sender, EventArgs e)
+        {
+            frmRanking rank = new frmRanking();
+            rank.Show();
+        }
     }
 }

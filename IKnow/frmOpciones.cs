@@ -24,7 +24,8 @@ namespace IKnow
             frmInicio inicio = new frmInicio();
             frmPrincipal principal = new frmPrincipal();
 
-            Equipos.id = (cbEquipos.Text);
+            
+            CacheEquipos.id = (cbEquipos.Text);
             Materia materia = new Materia();
             materia.CargarDatosMateria(cbMateria.Text);
 

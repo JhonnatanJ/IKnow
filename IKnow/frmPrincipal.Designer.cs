@@ -32,12 +32,12 @@ namespace IKnow
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.pbVolver = new System.Windows.Forms.PictureBox();
+
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnTurno = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlPreguntas = new System.Windows.Forms.Panel();
             this.pnlGrupo5 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.lblTema5 = new System.Windows.Forms.Label();
             this.btnT5100 = new System.Windows.Forms.Button();
             this.btnT5200 = new System.Windows.Forms.Button();
@@ -94,6 +94,7 @@ namespace IKnow
             this.label1 = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbVolver)).BeginInit();
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlPreguntas.SuspendLayout();
@@ -200,17 +201,6 @@ namespace IKnow
             this.pnlGrupo5.Name = "pnlGrupo5";
             this.pnlGrupo5.Size = new System.Drawing.Size(285, 681);
             this.pnlGrupo5.TabIndex = 4;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label7.Location = new System.Drawing.Point(52, 491);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(180, 38);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "EQUIPO 5";
             // 
             // lblTema5
             // 
@@ -973,7 +963,6 @@ namespace IKnow
         private System.Windows.Forms.Label lblTema4;
         private System.Windows.Forms.Label lblTema3;
         private System.Windows.Forms.Label lblTema2;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -986,5 +975,6 @@ namespace IKnow
         public System.Windows.Forms.Button btnTurno;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pbVolver;
+
     }
 }

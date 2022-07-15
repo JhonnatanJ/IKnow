@@ -83,9 +83,9 @@ namespace IKnow
             }
 
             int cont = Convert.ToInt32(this.form.btnTurno.Text);
-            int equi = Convert.ToInt32(CacheEquipos.id);
-            if (cont <= equi && cont > 0)
-            {
+            //int equi = Convert.ToInt32(CacheEquipos.id);
+            //if (cont <= equi && cont > 0)
+            //{
                 if (this.form.btnTurno.Text == "1")
                 {
                     int suma = Convert.ToInt32(this.form.lblScoreG1.Text);
@@ -122,9 +122,9 @@ namespace IKnow
 
                 }
 
-            }
+            //}
 
-            if (cont < equi)
+            if (cont < 5)
                 cont++;
             else
                 cont = 1;

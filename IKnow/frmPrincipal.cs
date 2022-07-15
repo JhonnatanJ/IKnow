@@ -69,7 +69,7 @@ namespace IKnow
                 }
             }
 
-            frmGanador ganador = new frmGanador(ganar, indice);
+            frmGanador ganador = new frmGanador(ganar, indice, this);
             ganador.Show();
             this.Enabled = false;
         }

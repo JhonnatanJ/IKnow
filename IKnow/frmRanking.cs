@@ -36,5 +36,10 @@ namespace IKnow
             lblRankP5.Text = CacheRanking.puntaje[4].ToString();
 
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

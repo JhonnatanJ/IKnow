@@ -14,10 +14,12 @@ namespace IKnow
     {
         int ganador;
         int grupo;
-        public frmGanador(int ganador, int grupo)
+        frmPrincipal form;
+        public frmGanador(int ganador, int grupo, frmPrincipal form)
         {
             this.ganador = ganador;
             this.grupo = grupo;
+            this.form = form;
             InitializeComponent();
         }
 
@@ -105,7 +107,14 @@ namespace IKnow
 
         private void btnTerminar_Click(object sender, EventArgs e)
         {
-            
+            frmRanking ranking = new frmRanking();
+            Puntuaciones puntuaciones = new Puntuaciones();
+
+            puntuaciones.InsertarPuntuacion(txbxNombreEquipo.Text,ganador);
+
+
+            form.Close();
+            ranking.Show();
             this.Close();
         }
     }

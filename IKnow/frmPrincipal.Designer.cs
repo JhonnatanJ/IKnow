@@ -32,7 +32,6 @@ namespace IKnow
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.pbVolver = new System.Windows.Forms.PictureBox();
-
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnTurno = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -92,9 +91,9 @@ namespace IKnow
             this.lblScoreG1 = new System.Windows.Forms.Label();
             this.lblTema1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbVolver)).BeginInit();
-
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlPreguntas.SuspendLayout();
@@ -188,7 +187,7 @@ namespace IKnow
             // pnlGrupo5
             // 
             this.pnlGrupo5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlGrupo5.Controls.Add(this.label7);
+            this.pnlGrupo5.Controls.Add(this.label3);
             this.pnlGrupo5.Controls.Add(this.lblTema5);
             this.pnlGrupo5.Controls.Add(this.btnT5100);
             this.pnlGrupo5.Controls.Add(this.btnT5200);
@@ -869,6 +868,17 @@ namespace IKnow
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label3.Location = new System.Drawing.Point(52, 491);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(180, 38);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "EQUIPO 5";
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -975,6 +985,6 @@ namespace IKnow
         public System.Windows.Forms.Button btnTurno;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pbVolver;
-
+        private System.Windows.Forms.Label label3;
     }
 }

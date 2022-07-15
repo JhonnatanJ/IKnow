@@ -103,6 +103,16 @@ namespace IKnow.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnRanking {
+            get {
+                object obj = ResourceManager.GetObject("btnRanking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondoInicio {
             get {
                 object obj = ResourceManager.GetObject("fondoInicio", resourceCulture);
@@ -253,9 +263,29 @@ namespace IKnow.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pbIKnow {
+            get {
+                object obj = ResourceManager.GetObject("pbIKnow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pbNombreEquipo {
             get {
                 object obj = ResourceManager.GetObject("pbNombreEquipo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pbRanking {
+            get {
+                object obj = ResourceManager.GetObject("pbRanking", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

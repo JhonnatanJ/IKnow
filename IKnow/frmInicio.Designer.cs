@@ -29,13 +29,14 @@ namespace IKnow
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.pbInicio = new System.Windows.Forms.PictureBox();
             this.btnJugar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnRanking = new System.Windows.Forms.Button();
+            this.pbIKnow = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIKnow)).BeginInit();
             this.SuspendLayout();
             // 
             // pbInicio
@@ -55,11 +56,11 @@ namespace IKnow
             this.btnJugar.BackgroundImage = global::IKnow.Properties.Resources.btnJugar2;
             this.btnJugar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnJugar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnJugar.Location = new System.Drawing.Point(386, 23);
+            this.btnJugar.Location = new System.Drawing.Point(456, 478);
             this.btnJugar.Margin = new System.Windows.Forms.Padding(0);
             this.btnJugar.Name = "btnJugar";
             this.btnJugar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnJugar.Size = new System.Drawing.Size(353, 122);
+            this.btnJugar.Size = new System.Drawing.Size(323, 106);
             this.btnJugar.TabIndex = 2;
             this.btnJugar.UseVisualStyleBackColor = false;
             this.btnJugar.Click += new System.EventHandler(this.btnJugar_Click);
@@ -79,10 +80,10 @@ namespace IKnow
             // btnRanking
             // 
             this.btnRanking.BackColor = System.Drawing.Color.Black;
-            this.btnRanking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRanking.BackgroundImage")));
+            this.btnRanking.BackgroundImage = global::IKnow.Properties.Resources.btnRanking;
             this.btnRanking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRanking.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRanking.Location = new System.Drawing.Point(802, 660);
+            this.btnRanking.Location = new System.Drawing.Point(438, 633);
             this.btnRanking.Margin = new System.Windows.Forms.Padding(0);
             this.btnRanking.Name = "btnRanking";
             this.btnRanking.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -91,11 +92,23 @@ namespace IKnow
             this.btnRanking.UseVisualStyleBackColor = false;
             this.btnRanking.Click += new System.EventHandler(this.btnRanking_Click);
             // 
+            // pbIKnow
+            // 
+            this.pbIKnow.BackColor = System.Drawing.Color.Black;
+            this.pbIKnow.Image = global::IKnow.Properties.Resources.pbIKnow;
+            this.pbIKnow.Location = new System.Drawing.Point(365, 24);
+            this.pbIKnow.Name = "pbIKnow";
+            this.pbIKnow.Size = new System.Drawing.Size(516, 82);
+            this.pbIKnow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbIKnow.TabIndex = 5;
+            this.pbIKnow.TabStop = false;
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1167, 743);
+            this.Controls.Add(this.pbIKnow);
             this.Controls.Add(this.btnRanking);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnJugar);
@@ -106,6 +119,7 @@ namespace IKnow
             this.Text = "iKNOW!!";
             ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIKnow)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -116,6 +130,7 @@ namespace IKnow
         private System.Windows.Forms.Button btnJugar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnRanking;
+        private System.Windows.Forms.PictureBox pbIKnow;
     }
 }
 

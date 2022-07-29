@@ -38,5 +38,10 @@ namespace IKnow
             frmRanking rank = new frmRanking();
             rank.Show();
         }
+
+        private void pbInicio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

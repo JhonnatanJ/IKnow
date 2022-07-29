@@ -10,7 +10,7 @@ namespace IKnow
     {
         public static string server = "localhost";
         public static string user = "root";
-        public static string pwd = "";
+        public static string pwd = "root";
         public static string database = "iknow";
     
         public static MySqlConnection conexion()

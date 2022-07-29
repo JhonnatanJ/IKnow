@@ -13,5 +13,7 @@ namespace IKnow.Cache
        
         public static int[] idtema = new int[5];
         public static string[] respuesta = new string[5];
+        public static string[] opcion_2 = new string[5];
+        public static string[] opcion_3 = new string[5];
     }
 }

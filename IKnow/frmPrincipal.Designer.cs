@@ -37,6 +37,7 @@ namespace IKnow
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlPreguntas = new System.Windows.Forms.Panel();
             this.pnlGrupo5 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.lblTema5 = new System.Windows.Forms.Label();
             this.btnT5100 = new System.Windows.Forms.Button();
             this.btnT5200 = new System.Windows.Forms.Button();
@@ -91,7 +92,6 @@ namespace IKnow
             this.lblScoreG1 = new System.Windows.Forms.Label();
             this.lblTema1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbVolver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -168,6 +168,7 @@ namespace IKnow
             this.pictureBox1.Size = new System.Drawing.Size(1422, 76);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pnlPreguntas
             // 
@@ -200,6 +201,17 @@ namespace IKnow
             this.pnlGrupo5.Name = "pnlGrupo5";
             this.pnlGrupo5.Size = new System.Drawing.Size(285, 681);
             this.pnlGrupo5.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label3.Location = new System.Drawing.Point(52, 491);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(180, 38);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "EQUIPO 5";
             // 
             // lblTema5
             // 
@@ -867,17 +879,6 @@ namespace IKnow
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(52, 491);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 38);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "EQUIPO 5";
             // 
             // frmPrincipal
             // 

@@ -49,6 +49,7 @@ namespace IKnow
             this.pbInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbInicio.TabIndex = 1;
             this.pbInicio.TabStop = false;
+            this.pbInicio.Click += new System.EventHandler(this.pbInicio_Click);
             // 
             // btnJugar
             // 

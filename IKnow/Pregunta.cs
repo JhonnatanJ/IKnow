@@ -32,6 +32,8 @@ namespace IKnow
                         CachePregunta.descripcion[i] = reader.GetString(1);
                         CachePregunta.idtema[i] = reader.GetInt32(2);
                         CachePregunta.respuesta[i] = reader.GetString(3);
+                        CachePregunta.opcion_2[i] = reader.GetString(4);
+                        CachePregunta.opcion_3[i] = reader.GetString(5);
                         i++;
                     }
                 }
